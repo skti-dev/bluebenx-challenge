@@ -10,6 +10,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.d-none {
+  display: none!important;
+}
+
 .d-flex-center {
   display: flex;
   justify-content: center;
@@ -152,6 +156,23 @@ nav img {
 
 .login__group--content input {
   flex: 1;
+}
+
+.login__group--icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.login__group--icon i {
+  color: var(--secondary-text-color);
+  cursor: pointer;
+  opacity: .8;
+  transition: opacity 200ms;
+}
+
+.login__group--icon i:hover {
+  opacity: 1;
 }
 
 .login__links {

@@ -35,7 +35,11 @@
               </div>
               <div class="login__group--content">
                 <label for="password"> Senha: </label>
-                <input type="password" id="password" placeholder="Digite sua senha" required />
+                <div class="login__group--icon">
+                  <input type="password" id="password" placeholder="Digite sua senha" required />
+                  <i class="far fa-eye" title="Visualizar senha" id="show-password"></i>
+                  <i class="far fa-eye-slash d-none" title="Esconder senha" id="hide-password"></i>
+                </div>
               </div>
             </div>
             <div class="login__links">

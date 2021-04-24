@@ -1,0 +1,105 @@
+#container {
+  width: 100vw;
+  height: 100vh;
+
+  box-sizing: border-box;
+
+  padding-top: 55px;
+}
+
+.form__container {
+  width: 80vw;
+  max-width: 750px;
+  font-size: .9rem;
+}
+
+.form__group {
+  border: unset;
+  /* border: 1px solid var(--secondary-text-color); */
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.form__group legend {
+  padding: 0 5px;
+  font-weight: 350;
+  font-size: 1.1em;
+}
+
+.form__text {
+  width: 100%;
+  
+  margin-bottom: 5px;
+  padding: 2.5px 5px;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.form__text input {
+  flex: 1
+}
+
+.form__radio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.form__radio p {
+  width: 100%;
+}
+
+.form__radio--content {
+  display: flex;
+  align-items: center;
+}
+
+.form__actions {
+  width: 100%;
+  padding: 5px 0 5px 5px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form__actions input {
+  height: 35px;
+  width: 100px;
+  cursor: pointer;
+  outline: unset;
+  border: unset;
+  transition: background-color 200ms;
+}
+
+.form__actions input:active, .form__actions input:focus {
+  outline: unset;
+}
+
+.form__actions input.send {
+  border: 1px solid var(--main-blue);
+  background-color: #FFF;
+  color: var(--main-blue);
+}
+
+.form__actions input.send:focus, .form__actions input.send:hover {
+  background-color: var(--main-blue);
+  color: #FFF;
+} 
+
+.form__actions input.clear {
+  border: 1px solid var(--error-color);
+  background-color: #FFF;
+  color: var(--error-color);
+}
+
+.form__actions input.clear:focus,.form__actions input.clear:hover {
+  background-color: var(--error-color);
+  color: #FFF;
+} 
+
+.form__actions input:last-child {
+  margin-left: 10px
+}

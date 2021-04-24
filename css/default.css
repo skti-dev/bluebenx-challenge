@@ -1,0 +1,75 @@
+:root {
+  --main-blue: #0068ff;
+  --input-border-color: #CCC;
+  --secondary-text-color: #666;
+  --error-color: #333;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.d-none {
+  display: none!important;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+
+  background-color: #FFF;
+  box-shadow: 0 1px 10px 3px #0003;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav {
+  padding: 3px 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 130px;
+}
+
+nav span {
+  font-weight: 600;
+}
+
+.highlight {
+  color: var(--main-blue);
+}
+
+input {
+  outline: unset;
+  border: unset;
+  border-bottom: 1px solid var(--input-border-color);
+  padding: 2px 4px;
+  transition: border 200ms;
+  height: 30px;
+  font-family: inherit;
+  font-size: .9em;
+}
+
+input:focus, input:active {
+  border-image: linear-gradient(to right top, #0068ff, #0260ef, #0258df, #0151cf, #0049bf);
+  border-image-slice: 1;
+}

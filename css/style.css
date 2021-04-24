@@ -1,8 +1,6 @@
 :root {
   --main-blue: #0068ff;
   --input-border-color: #CCC;
-  --input-error-color: #f93943;
-  --input-error-focus-color: #db222a;
   --secondary-text-color: #666;
 }
 
@@ -209,18 +207,6 @@ nav img {
   border: 1px solid var(--main-blue);
   background-color: var(--main-blue);
   color: #FFF;
-} 
-
-.login__actions input.clear {
-  background-color: var(--input-error-color);
-  border: 1px solid var(--input-error-color);
-  color: #FFF;
-}
-
-.login__actions input.clear:focus, .login__actions input.clear:hover {
-  background-color: #FFF;
-  border: 1px solid var(--input-error-color);
-  color: var(--input-error-color);
 } 
 
 .login__actions input:last-child {

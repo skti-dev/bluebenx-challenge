@@ -1,11 +1,9 @@
 :root {
   --main-blue: #0068ff;
   --input-border-color: #CCC;
-  --input-success-color: #44a75e;
-  --input-success-focus-color: #008239;
   --input-error-color: #f93943;
   --input-error-focus-color: #db222a;
-  --input-button-text-color: #FFF;
+  --secondary-text-color: #666;
 }
 
 body {
@@ -72,7 +70,7 @@ nav img {
 }
 
 .divider__title h3 {
-  color: #666
+  color: var(--secondary-text-color)
 }
 
 .divider__left img {
@@ -166,7 +164,7 @@ nav img {
 }
 
 .login__links a {
-  color: #666;
+  color: var(--secondary-text-color);
   text-decoration: none;
   font-size: .875em;
 }
@@ -176,7 +174,7 @@ nav img {
 }
 
 .icon__link i {
-  color: #666
+  color: var(--secondary-text-color)
 }
 
 .login__actions {

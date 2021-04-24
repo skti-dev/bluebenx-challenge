@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sprint 01 - Computional Thinking & Application Server </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5747113857.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div id="container" class="d-flex-center">
+      <header>
+        <nav> <img src="./images/logo-bluebenx.svg" alt="Logo Bluebenx"> </nav>
+      </header>
+      <div class="divider__left d-flex-center">
+        <div class="divider__title">
+          <h1> Bem-vindo a <span class="highlight">BlueBenx</span>! </h1>
+          <h3> Uma conta segura e eficiente. </h3>
+        </div>
+        <img src="./images/undraw_Safe_re_kiil.svg" alt="Undraw login seguro">
+      </div>
+      <div class="divider__right d-flex-center">
+        <form action="#">
+          <div class="login__container">
+            <div class="login__title">
+              <h1> Login </h1>
+            </div>
+            <div class="login__group">
+              <div class="login__group--content">
+                <label for="login"> Login: </label>
+                <input type="text" id="login" placeholder="Digite seu login" required />
+              </div>
+              <div class="login__group--content">
+                <label for="password"> Senha: </label>
+                <input type="password" id="password" placeholder="Digite sua senha" required />
+              </div>
+            </div>
+            <div class="login__links">
+              <div class="icon__link">
+                <i class="fas fa-unlock"></i>
+                <a href="#"> Esqueci minha senha </a>
+              </div>
+              <div class="icon__link">
+                <i class="fas fa-user-plus"></i>
+                <a href="#"> Cadastro </a>
+              </div>
+            </div>
+            <div class="login__actions">
+              <input type="reset" class="clear" value="Limpar">
+              <input type="submit" class="send" value="Enviar">
+            </div>
+          </div>
+        </form>
+      </div>
+      <span class="btn__help d-flex-center" title="Clique para obter ajuda">
+        <i class="far fa-life-ring"></i>
+      </span>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

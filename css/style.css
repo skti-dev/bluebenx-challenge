@@ -1,0 +1,248 @@
+:root {
+  --main-blue: #0068ff;
+  --input-border-color: #CCC;
+  --input-success-color: #44a75e;
+  --input-success-focus-color: #008239;
+  --input-error-color: #f93943;
+  --input-error-focus-color: #db222a;
+  --input-button-text-color: #FFF;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+
+  background-color: #FFF;
+  box-shadow: 0 3px 10px 3px #0003;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav {
+  padding: 3px 0;
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  width: 130px;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  
+  position: relative;
+
+  flex-wrap: wrap;
+}
+
+.highlight {
+  color: var(--main-blue);
+}
+
+.divider__left, .divider__right {
+  height: 100%;
+}
+
+.divider__left {
+  width: 35%;
+  background-color: #FFF;
+  flex-wrap: wrap;
+}
+
+.divider__title h1, .divider__title h3 {
+  margin: 0;
+}
+
+.divider__title h3 {
+  color: #666
+}
+
+.divider__left img {
+  width: 90%;
+  align-self: flex-start;
+}
+
+.divider__right {
+  background-image: linear-gradient(to right top, #0068ff, #0260ef, #0258df, #0151cf, #0049bf);
+  flex: 1;
+}
+
+.login__container {
+  width: 80vw;
+  max-width: 350px;
+  min-height: 300px;
+  height: auto;
+
+  background-color: #FFF;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 3px #0003;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-size: 1rem;
+}
+
+.login__title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.login__title h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--main-blue);
+}
+
+.login__group {
+  width: 100%;
+  padding-right: 10px;
+}
+
+.login__group--content {
+  width: 100%;
+  
+  margin-bottom: 5px;
+  padding: 2.5px 5px;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.login__group--content input {
+  outline: unset;
+  border: unset;
+  border-bottom: 1px solid var(--input-border-color);
+  padding: 2px 4px;
+  transition: border 200ms;
+  height: 30px;
+  font-family: inherit;
+  font-size: .9em;
+}
+
+.login__group--content input:focus, .login__group--content input:active {
+  border-image: linear-gradient(to right top, #0068ff, #0260ef, #0258df, #0151cf, #0049bf);
+  border-image-slice: 1;
+}
+
+.login__group--content label {
+  font-size: .8em;
+}
+
+.login__group--content:last-child {
+  padding-top: unset;
+  margin-bottom: unset;
+}
+
+.login__group--content input {
+  flex: 1;
+}
+
+.login__links {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.login__links a {
+  color: #666;
+  text-decoration: none;
+  font-size: .875em;
+}
+
+.login__links a:hover {
+  text-decoration: underline;
+}
+
+.icon__link i {
+  color: #666
+}
+
+.login__actions {
+  width: 100%;
+  
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.login__actions input {
+  height: 35px;
+  width: 100px;
+  cursor: pointer;
+  outline: unset;
+  border: unset;
+  transition: background-color 200ms;
+}
+
+.login__actions input:active, .login__actions input:focus {
+  outline: unset;
+}
+
+.login__actions input.send {
+  border: 1px solid var(--main-blue);
+  color: var(--main-blue);
+  background-color: #FFF;
+}
+
+.login__actions input.send:focus, .login__actions input.send:hover {
+  border: 1px solid var(--main-blue);
+  background-color: var(--main-blue);
+  color: #FFF;
+} 
+
+.login__actions input.clear {
+  background-color: var(--input-error-color);
+  border: 1px solid var(--input-error-color);
+  color: #FFF;
+}
+
+.login__actions input.clear:focus, .login__actions input.clear:hover {
+  background-color: #FFF;
+  border: 1px solid var(--input-error-color);
+  color: var(--input-error-color);
+} 
+
+.login__actions input:last-child {
+  margin-left: 10px
+}
+
+.btn__help {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+
+  background-color: #FFF;
+  box-shadow: 0px 0px 10px 3px #0003;
+  cursor: pointer;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+
+.btn__help i {
+  font-size: 3rem;
+  color: var(--main-blue)
+}

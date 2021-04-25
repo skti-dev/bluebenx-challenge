@@ -1,0 +1,18 @@
+#container {
+  width: 100vw;
+  height: 100vh;
+
+  flex-wrap: wrap;
+}
+
+.divider__left {
+  background-color: #FFF;
+}
+
+.divider__right {
+  flex-direction: column;
+
+  background-image: linear-gradient(to right top, #0068ff, #0260ef, #0258df, #0151cf, #0049bf);
+}
+
+

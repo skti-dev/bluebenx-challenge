@@ -4,7 +4,20 @@
 
   box-sizing: border-box;
 
-  padding-top: 55px;
+  padding-top: 50px;
+}
+
+.divider__left {
+  background-color: #FFF;
+}
+
+.divider__right {
+  background-image: linear-gradient(to right top, #0068ff, #0260ef, #0258df, #0151cf, #0049bf);
+}
+
+form {
+  position: absolute;
+  background-color: #FFF;
 }
 
 .form__container {

@@ -8,28 +8,12 @@
   flex-wrap: wrap;
 }
 
-.divider__left, .divider__right {
-  height: 100%;
-}
-
 .divider__left {
-  width: 35%;
   background-color: #FFF;
-  flex-wrap: wrap;
-}
-
-.divider__title h3 {
-  color: var(--secondary-text-color)
-}
-
-.divider__left img {
-  width: 90%;
-  align-self: flex-start;
 }
 
 .divider__right {
   background-image: linear-gradient(to right top, #0068ff, #0260ef, #0258df, #0151cf, #0049bf);
-  flex: 1;
 }
 
 .login__container {
@@ -143,10 +127,6 @@
   outline: unset;
   border: unset;
   transition: background-color 200ms;
-}
-
-.login__actions input:active, .login__actions input:focus {
-  outline: unset;
 }
 
 .login__actions input.send {

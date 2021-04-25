@@ -32,7 +32,6 @@ form {
 
 .form__group {
   border: unset;
-  /* border: 1px solid var(--secondary-text-color); */
   padding: 10px;
   margin: 0;
   box-sizing: border-box;

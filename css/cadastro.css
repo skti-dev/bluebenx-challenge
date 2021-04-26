@@ -17,10 +17,16 @@
 
 form {
   position: absolute;
+  top: 55px;
+
   background-color: #FFF;
 }
 
 .form__container {
+  overflow-x: hidden;
+  overflow-y: auto; 
+
+  height: 90vh;
   width: 80vw;
   max-width: 750px;
   font-size: .9rem;

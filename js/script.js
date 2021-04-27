@@ -6,6 +6,14 @@ form.addEventListener("submit", (event) => {
   if(form.getAttribute("action") != "#") window.location.href = form.action
 })
 
+form.addEventListener("reset", (event) => {
+  if(confirm("Você tem certeza que deseja limpar todos dados do formulário?")) {
+    return true
+  }else{
+    event.preventDefault()
+  }
+})
+
 const showPassword = document.querySelector("#show-password"),
 hidePassword = document.querySelector("#hide-password")
 

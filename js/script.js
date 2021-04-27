@@ -2,6 +2,8 @@ const form = document.querySelector("#generic-form")
 form.addEventListener("submit", (event) => {
   event.preventDefault()
   form.reset()
+  
+  if(form.getAttribute("action") != "#") window.location.href = form.action
 })
 
 const showPassword = document.querySelector("#show-password"),

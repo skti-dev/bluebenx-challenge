@@ -27,7 +27,7 @@
         <img src="./images/undraw_Safe_re_kiil.svg" alt="Undraw login seguro">
       </div>
       <div class="divider__right d-flex-center">
-        <form action="#" method="POST" id="generic-form">
+        <form action="#" method="POST" id="login-form">
           <div class="login__container">
             <div class="login__title">
               <h1> Login </h1>
@@ -35,12 +35,12 @@
             <div class="login__group">
               <div class="login__group--content">
                 <label for="login"> Login: </label>
-                <input type="text" id="login" placeholder="Digite seu login" required />
+                <input type="text" id="login" name="login" placeholder="Digite seu login" required />
               </div>
               <div class="login__group--content">
                 <label for="password"> Senha: </label>
                 <div class="login__group--icon">
-                  <input type="password" id="password" placeholder="Digite sua senha" required />
+                  <input type="password" id="password" name="password" placeholder="Digite sua senha" required />
                   <i class="far fa-eye" title="Visualizar senha" id="show-password"></i>
                   <i class="far fa-eye-slash d-none" title="Esconder senha" id="hide-password"></i>
                 </div>

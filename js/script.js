@@ -1,7 +1,7 @@
 const isFormValid = form => {
   const formData = new FormData(form)
 
-  let finalFormData = {}
+  const finalFormData = {}
   for (var key of formData.keys()) {
     finalFormData[key] = formData.get(key)
   }
